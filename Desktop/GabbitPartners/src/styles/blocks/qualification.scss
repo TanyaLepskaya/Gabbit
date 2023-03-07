@@ -1,0 +1,94 @@
+.qualification {
+
+&__block {
+    background: linear-gradient(102.34deg, #FFFFFF 0%, rgba(255, 255, 255, 0.95) 22.16%, rgba(255, 255, 255, 0.65) 44.13%, 
+    rgba(255, 255, 255, 0.15) 72.98%, rgba(255, 255, 255, 0) 100%);
+    border: 1px solid #EBEAF0;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.05);
+    padding-top: 40px;
+    padding-bottom: 30px;
+    padding-left: 80px;
+    
+
+}
+
+&__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    color: #323A38;
+    margin-bottom: 20px;
+}
+&__experience {
+    font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+color: #323A38;
+margin-bottom: 40px;
+max-width: 672px;
+max-height: 56px;
+}
+&__italic {
+    color: rgba(128, 128, 128, 1);
+}
+&__list {
+    max-width: 672px;
+    max-height: 521px;
+}
+&__diploma-list {
+    display: flex;
+}
+&__img {
+    position: absolute;
+    right: -78px;
+    top: 52px;
+}
+&__item {
+    padding-left: 12px;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 16px;
+        width: 4px;
+        height: 4px;
+        background-color: #3777A6;
+        border-radius: 50%; 
+    }
+}
+&__diploma-list {
+    display: flex;
+    margin-top: 60px;
+    gap: 20px;
+}
+&__link-see-pdf {
+    display: flex;
+    color: #3777A6;;    
+}
+&__link-svg {
+    display: flex;
+    align-items: center;
+    margin-right: 6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

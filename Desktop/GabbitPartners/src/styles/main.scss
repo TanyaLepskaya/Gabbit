@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'PT Serif', sans-serif;
+    font-size: 18px;
+    line-height: 200%;
+    font-weight: 400;
+    background-color: #FBFBFB;
+}
+h1,
+h2 {
+    font-family:'Cormorant Garamond', sans-serif;
+}
+
+.container {
+    max-width: 1260px;
+    padding-right: 30px;
+    padding-left: 30px;
+    width: 100%;
+    margin: 0 auto;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+.button {
+    padding: 10px 25px 12px;
+    box-shadow: inset 2px 2px 15px rgba(255, 255, 255, 0.07);
+    filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.07));
+    border: none;
+    background-color: #103C58;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+    background-image: url(/public/images/point.png);
+}
+

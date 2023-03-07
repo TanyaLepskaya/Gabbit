@@ -1,0 +1,49 @@
+.content {
+  background-image: url(/public/images/bg.png);
+  background-repeat: no-repeat;
+  background-position: 106% -30px;
+  padding-top: 140px;
+  &__block {
+    display: flex;
+  }
+  &__title {
+    margin-top: 0;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 97px;
+    color: #323a38;
+    margin-bottom: 30px;
+  }
+  &__appeal {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #323a38;
+    margin-bottom: 60px;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__signature {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: 80px;
+  }
+  &__ism {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 23px;
+    color: #909499;
+    font-style: italic;
+  }
+  &__name {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #808080;
+  }
+}
