@@ -1,0 +1,17 @@
+.footer {
+    
+
+&__info {
+display: flex;
+justify-content: space-between;
+font-weight: 400;
+font-size: 15px;
+line-height: 23px;
+color: #909499;
+margin-top: 20px;
+margin-bottom: 22px;
+}
+&__link {
+    color: #909499;
+}
+}

@@ -186,7 +186,7 @@
         <div class="container about-me__info">
             <div class="about-me__block">
                 <h2 class="about-me__title">О нас</h2>
-                <p class="about-me__text">Габитов и партнеры — это сообщество квалифицированных юристов и специалистов широкого профиля в разных направлениях.</p>
+                <p class="about-me__text"><span class="about-me__text--blue">Габитов и партнеры</span> — это сообщество квалифицированных юристов и специалистов широкого профиля в разных направлениях.</p>
                 <p class="about-me__text">Основной наш принцип — индивидуальный подход к каждому делу. Мы лично исполняем поручения наших клиентов, работая на качество и на своё имя.</p>
                 <p class="about-me__text">Главные наши ценности — это Ваше доверие, быстрые сроки, профессионализм и конфиденциальность.</p>
             </div>
@@ -356,51 +356,55 @@
         </div>
     </section>
     </main>
-    <section class="contacts" id="contacts">
-        <div class="contscts__content container">
-            <div class="contscts__content">
-                <h2 class="contacts__title">Мои контакты</h2>
-                <p class="contacts__connection">Свяжитесь со мной удобным для Вас способом</p>
-                <img class="contacts__image" src="./assets/images/business-card.png" alt="Визитная карточка">
+    <section class="my-contacts" id="contacts">
+        <div class="my-contacts__content container">
+            <div class="my-contscts__content">
+                <h2 class="my-contacts__title">Мои контакты</h2>
+                <p class="my-contacts__connection">Свяжитесь со мной удобным для Вас способом</p>
+                <img class="my-contacts__image" src="./assets/images/business-card.png" alt="Визитная карточка">
             </div>
-        <div>
-            <div class="contacts__time-tel">
-                <span class="conntacts__time">Ежедневно 9:00 - 20:00</span>
-                <div class="contacts__tel">
-                <a href="#" type ="tel:89625592020">
-                        8 962 <span>559-20-20</span> 
+        <div class="my-contacts__info">
+            <div class="my-contacts__time-tel">
+                <span class="my-contacts__time">Ежедневно 9:00 - 20:00</span>
+                <div class="my-contacts__tel">
+                <a class="my-contacts__link-tel" href="#" type ="tel:89625592020">
+                        8 962 <span class="my-contacts__big">559-20-20</span> 
                 </a>
                 </div>
             </div>
-            <div class="contacts__list">
-                <a class="contacts__mail" href="mailto:artyrgab@yandex.ru"></a>
+            <div class="my-contacts__list">
+                <a class="my-contacts__mail" href="mailto:artyrgab@yandex.ru">artyrgab@yandex.ru</a>
                 
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <a href="#" class="my-contacts__link my-contacts__link--whatsapp">
+                <svg  width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M15.0415 2.92367C13.4385 1.31879 11.3069 0.434539 9.03619 0.433594C4.35678 0.433594 0.54743 4.242 0.545538 8.9233C0.545538 10.4194 0.936119 11.8796 1.67851 13.1677L0.474609 17.5662L4.97528 16.385C6.21606 17.0612 7.61194 17.4177 9.0324 17.4187H9.03619C13.7147 17.4187 17.524 13.6103 17.5259 8.92897C17.5259 6.66114 16.6445 4.52855 15.0415 2.92367ZM9.03619 15.9859H9.03335C7.76703 15.985 6.52531 15.6455 5.44152 15.0014L5.18428 14.8482L2.51358 15.549L3.2257 12.9454L3.05831 12.6787C2.35186 11.5552 1.97925 10.2568 1.97925 8.9233C1.98114 5.03262 5.14645 1.8673 9.03902 1.8673C10.9238 1.86825 12.6952 2.60307 14.0277 3.93653C15.3593 5.27094 16.0931 7.04321 16.0922 8.92897C16.0903 12.8197 12.925 15.9859 9.03619 15.9859ZM12.907 10.7003C12.6942 10.5934 11.652 10.0809 11.4572 10.0099C11.2634 9.939 11.1224 9.90401 10.9806 10.1158C10.8387 10.3277 10.4321 10.8053 10.3082 10.9471C10.1843 11.089 10.0604 11.106 9.84856 11.0001C9.63672 10.8942 8.95296 10.67 8.14248 9.94751C7.51169 9.38481 7.08612 8.69065 6.96223 8.47786C6.83834 8.26508 6.94899 8.15065 7.05585 8.04473C7.15137 7.95016 7.2677 7.79695 7.37362 7.67306C7.47954 7.54917 7.51453 7.46122 7.58546 7.31936C7.65639 7.1775 7.62139 7.05361 7.56749 6.94769C7.51453 6.84083 7.0899 5.79676 6.91305 5.37213C6.74188 4.96074 6.56692 5.01559 6.43641 5.00992C6.31347 5.00425 6.17161 5.00235 6.0307 5.00235C5.88884 5.00235 5.65903 5.05531 5.46421 5.26716C5.2694 5.47994 4.72183 5.99252 4.72183 7.03659C4.72183 8.08066 5.48218 9.08974 5.5881 9.2316C5.69402 9.37346 7.08423 11.5155 9.21209 12.4347C9.71899 12.6532 10.1143 12.7837 10.4217 12.8821C10.9295 13.0438 11.392 13.0201 11.758 12.9662C12.1656 12.9057 13.0129 12.4537 13.1898 11.9581C13.3666 11.4625 13.3666 11.0379 13.3137 10.949C13.2607 10.8601 13.1179 10.8062 12.907 10.7003Z" fill="#595959"/>
                 </svg>
-
+                </a>
+                <a class="my-contacts__link my-contacts__link--tg" href="#">
                 <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M16.375 0.328403L1.2708 6.15283C0.240002 6.56685 0.245966 7.14188 1.08168 7.39831L4.95952 8.608L13.9317 2.94714C14.356 2.68901 14.7436 2.82787 14.425 3.1107L7.15571 9.67117H7.15401L7.15571 9.67202L6.88822 13.6691C7.28009 13.6691 7.45302 13.4894 7.67281 13.2773L9.55636 11.4457L13.4742 14.3396C14.1967 14.7374 14.7155 14.533 14.8952 13.6708L17.4671 1.55003C17.7303 0.494523 17.0641 0.0166083 16.375 0.328403Z" fill="#595959"/>
                 </svg>
+            </a>
             </div>
-        </div>
-        <div class="contacts__form">
-            <form class="contacts-info__form">
+
+        
+        <div class="my-contacts__form">
+            <form class="my-contacts__form-info">
                 
-                    <input class="contacts-info__input" type="text" name="name" placeholder="Имя" required>
-                    <input class="contacts-info__input" type="number/email" name="contact" placeholder="Телефон / E-mail" required> 
-                    <input class="contacts-info__input contacts-info__input__wide" type="text" name="request" placeholder="Оставьте комментарий">
-            
+                    <input class="my-contacts__input" type="text" name="name" placeholder="Имя" required>
+                    <input class="my-contacts__input" type="number/email" name="contact" placeholder="Телефон / E-mail" required> 
+                    <textarea class="my-contacts__input-wide" name="request" placeholder="Оставьте комментарий"></textarea>
             </form>
-            <span>Нажимая на кнопку, Вы даете согласие на обработку <a href="">персональных данных.</a></span>
-            <a class="contacts__button button" href="#" type="button">Отправить сообщение</a>
+            <span class="my-contacts__span">Нажимая на кнопку, Вы даете согласие на обработку <a class="my-contacts__personal" href="">персональных данных.</a></span>
+            <a class="my-contacts__button button" href="#" type="button">Отправить сообщение</a>
         </div>
         </div>
+    </div>
         </section>
     <footer class="footer">
-        <div class="footer__container container">
-            <span><a href="#">Политика конфиденциальности</a></span>
-            <span>Copyright © 2023 «Габитов и партнеры» — Все права защищены.</span>
+        <div class="footer__info container">
+            <span class="footer__confidentiality"><a class="footer__link" href="#">Политика конфиденциальности</a></span>
+            <span class="footer__rights">Copyright © 2023 «Габитов и партнеры» — Все права защищены.</span>
         </div>
     </footer>
 </body>
