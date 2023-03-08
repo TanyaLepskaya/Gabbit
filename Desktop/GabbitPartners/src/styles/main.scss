@@ -3,6 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body::-webkit-scrollbar {
+    width: 6px;            
+  }
+  body::-webkit-scrollbar-track {
+    background: white;        /* цвет дорожки */
+  }
+  body::-webkit-scrollbar-thumb {
+    background: #469bd86b;
+    border-radius: 5px;
+  }
+
 body {
     font-family: 'PT Serif', sans-serif;
     font-size: 18px;
@@ -10,6 +22,7 @@ body {
     font-weight: 400;
     background-color: #FBFBFB;
 }
+
 h1,
 h2 {
     font-family:'Cormorant Garamond', sans-serif;

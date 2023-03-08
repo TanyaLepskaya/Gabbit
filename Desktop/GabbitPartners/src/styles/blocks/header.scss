@@ -62,4 +62,20 @@
     width: 20px;
     height: 20px;
   }
+  &__social-link--whatsapp:hover {
+    svg {
+      path {
+        fill: #0dc143;
+        transition: all .2s;
+      }
+    }
+  }
+  &__social-link--tg:hover {
+    svg {
+      path {
+        fill: #0193f4;
+        transition: all .2s;
+      }
+    }
+  }
 }
