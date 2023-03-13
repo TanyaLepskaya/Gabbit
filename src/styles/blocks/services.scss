@@ -1,13 +1,15 @@
 .services {
     margin-top: 100px;
-    margin-bottom: 160px;
-
+    
     &__title {
     font-weight: 500;
     font-size: 40px;
     line-height: 48px;
     color: #323A38;
-    padding-bottom: 30px;
+    padding-bottom: 32px;
+}
+&__image {
+    border-radius: 5px 5px 0px 0px;
 }
 &__list {
     display: flex;
@@ -19,18 +21,15 @@
 &__item {
     display: flex;
     flex-direction: column;
-    width: 32%;
+    width: 32%;    
+}
+&__product {
+    padding: 15px 25px 18px;
     background: #FFFFFF;
     border-width: 0px 1px 1px 1px;
     border-style: solid;
     border-color: #EBEAF0;
     border-radius: 0px 0px 5px 5px;
-    
-    
-}
-&__product {
-    padding: 15px 25px 18px;
-    background: #FFFFFF;
 }
 
 &__image {
@@ -51,9 +50,6 @@
     color: #909499;
     
 }
-
-
-
 }
 
 

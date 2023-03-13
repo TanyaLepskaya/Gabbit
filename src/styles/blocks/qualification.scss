@@ -5,9 +5,9 @@
     border-radius: 5px;
     position: relative;
     box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.05);
-    padding-top: 40px;
-    padding-bottom: 30px;
-    padding-left: 80px;
+    padding-top: 24px;
+    padding-bottom: 12px;
+    padding-left: 110px;
     background-image: url(/public/images/blur.png), url(/public/images/texture.png);
     background-size: 100%;
 }
@@ -38,11 +38,12 @@ max-height: 56px;
 }
 &__diploma-list {
     display: flex;
+
 }
 &__img {
     position: absolute;
-    right: -78px;
-    top: 52px;
+    right: -70px;
+    top: 34px;
 }
 &__item {
     padding-left: 12px;
@@ -60,7 +61,7 @@ max-height: 56px;
 }
 &__diploma-list {
     display: flex;
-    margin-top: 60px;
+    margin-top: 46px;
     gap: 20px;
 }
 &__link-see-pdf {

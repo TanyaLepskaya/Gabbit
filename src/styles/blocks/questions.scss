@@ -26,13 +26,13 @@
     background: #FFFFFF;
     box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.05);
     border-radius: 5px;
-    padding: 16px 25px;
     margin-bottom: 20px;
     align-items: center;
 }
 &__answer {
     display: flex;
     justify-content: space-between;
+    padding: 20px 25px;
 }
 
 &__text {
@@ -40,14 +40,20 @@
 }
 
 &__item--open {
+    
+    border: 1px solid #EBEAF0;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    
     .questions__text {
     display: block;
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
     color: #323A38;
-    padding-right: 13px;
-    padding-left: 13px;
+    padding-right: 140px;
+    padding-left: 38px;
+    padding-bottom: 30px;
     }
     .questions__answer {
         padding-bottom: 22px;

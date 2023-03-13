@@ -1,3 +1,4 @@
+
 const items = document.querySelectorAll(`.js-list-item`);
 
 const openList = (item) => {

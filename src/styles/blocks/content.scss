@@ -1,10 +1,15 @@
 .content {
-  background-image: url(/public/images/bg.png);
+
+  background-image:url(/public/images/bg.png);
   background-repeat: no-repeat;
   background-position: 106% -30px;
-  padding-top: 140px;
+  padding-top: 130px;
+  border: 1px solid #EBEAF0;
+  box-shadow: 0px 30px 40px -26px rgba(0, 0, 0, 0.05);
+  
   &__block {
     display: flex;
+    justify-content: space-between;
   }
   &__title {
     margin-top: 0;
@@ -13,6 +18,7 @@
     line-height: 97px;
     color: #323a38;
     margin-bottom: 30px;
+    margin-top: 10px;
   }
   &__appeal {
     font-weight: 400;
