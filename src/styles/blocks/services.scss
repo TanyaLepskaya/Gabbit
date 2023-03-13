@@ -21,6 +21,9 @@
 &__item {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    background-color: #fff;
     width: 32%;    
 }
 &__product {
@@ -49,6 +52,11 @@
     line-height: 26px;
     color: #909499;
     
+}
+@media screen and (max-width: 1260px) {
+    &__list {
+        gap: 12px 0;
+    }
 }
 }
 

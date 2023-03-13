@@ -42,8 +42,9 @@ max-height: 56px;
 }
 &__img {
     position: absolute;
-    right: -70px;
+    right: 0px;
     top: 34px;
+    width: 30%;
 }
 &__item {
     padding-left: 12px;
@@ -74,8 +75,14 @@ max-height: 56px;
     margin-right: 6px;
 }
 
-
-
+@media screen and (min-width:1366px) {
+    &__img {
+        position: absolute;
+        right: -70px;
+        top: 34px;
+        width: 30%;
+    }
+}
 
 
 
