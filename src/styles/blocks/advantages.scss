@@ -35,14 +35,14 @@
     max-width: 224px;
     width: 100%;
     background: #FFFFFF;
-    border-radius: 5px 5px 5px 5px
+    border-radius: 5px 5px 5px 5px;
+    border-width: 0px 1px 1px 1px;
+    border-style: solid;
+    border-color: #EBEAF0;
 }
 &__strides {
     padding: 15px 25px 18px;
     background: #FFFFFF;
-    border-width: 0px 1px 1px 1px;
-    border-style: solid;
-    border-color: #EBEAF0;
     border-radius: 0px 0px 5px 5px
 }
 &__image {
