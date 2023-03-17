@@ -13,7 +13,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
     &--blue {
         color: #3777A6;
     }
@@ -45,4 +45,38 @@ margin-bottom: 0;
     width: 49%;
     padding-top: 158px;
 }
+}
+
+@media (max-width: 768px) {
+    .about-me {
+    margin-bottom: 30px;
+    &__photo {
+        display: none;
+    }
+    &__photo-mobil {
+        max-width: 400px;
+        margin: auto;
+        display: block;
+        width: 100%;
+    }
+    &__title {
+        font-size: 38px;
+        line-height: 38px;
+        margin-bottom: 20px;
+    }
+    &__block {
+        width: 100%;
+        padding-top: 0;
+    }
+    &__info {
+        position: static;
+    }    
+}
+}
+@media (min-width: 768px) {
+    .about-me {
+    &__photo-mobil{
+        display: none;
+    }
+    }
 }

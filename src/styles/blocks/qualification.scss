@@ -75,6 +75,41 @@ max-height: 56px;
     margin-right: 6px;
 }
 
+@media (max-width: 768px) {
+    
+    &__block {
+    background-image: none;
+    background-color: #FAFAFA;
+    border: 1px 0 solid #EBEAF0;
+    border-radius: 0;
+    }
+    &__img {
+        display: none;
+    }
+    &__block {
+        padding-top: 30px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+    }
+    &__title {
+        font-size: 38px;
+        line-height: 38px;
+    }
+    &__experience {
+        margin-bottom: 30px;
+        max-width: 335px;
+        min-height: 138px;
+}
+&__diploma-list {
+    display: flex;
+    margin-top: 40px;
+    gap: 10px;   
+}
+&__diploma-img {
+    width: 100%;
+}
+}
+
 @media screen and (min-width:1366px) {
     &__img {
         position: absolute;
@@ -82,19 +117,6 @@ max-height: 56px;
         top: 34px;
         width: auto;
     }
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

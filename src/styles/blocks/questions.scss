@@ -98,12 +98,30 @@
     &::after {
         transform: rotate(90deg);
     }
-
+}
 }
 
-
-
-
-
-
+@media (max-width: 768px) {
+    .questions {
+    margin-bottom: 60px;
+    
+    &__title {        
+        font-size: 38px;
+        line-height: 38px;
+        margin-bottom: 20px;
+    }
+    &__answer {
+        padding: 16px 20px 22px;
+    }
+    &__item--open {
+        
+        .questions__text {
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-bottom: 30px;
+        }
+        }
+    }
 }
+

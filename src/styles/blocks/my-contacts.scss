@@ -179,28 +179,53 @@
     width: fit-content;
   }
 
+  @media (max-width: 768px) {
+    .my-contacts {
 
+    &__content {
+      flex-direction: column;
+    }
+    &__content-block {
+      width: 100%;
+      margin-right: 0;
+    }
+    &__image {
+      display: none;
+    }
 
+    &__title {
+      font-size: 38px;
+      line-height: 38px;
+    }
+    &__connection {
+      font-size: 17px;
+      line-height: 26px;
+      margin-bottom: 30px;
+    }
+    &__info {
+      margin-top: 0;
+      width: 100%;
+    }
+    &__button {
+      display: block;
+      margin: auto;
+      margin-top: 20px;
+      margin-bottom: 60px;
+      width: fit-content;
+    }
+    &__image-mobil {
+      width: 100%;
 
+    }
+    }
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (min-width: 768px) {
+  .my-contacts {
+  
+    &__image-mobil {
+    display: none;
+  }
+}
 }

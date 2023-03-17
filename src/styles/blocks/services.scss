@@ -24,7 +24,8 @@
     justify-content: space-between;
     height: auto;
     background-color: #fff;
-    width: 32%;    
+    width: 32%;
+    border-radius: 5px 5px 5px 5px;    
 }
 &__product {
     padding: 15px 25px 18px;
@@ -53,12 +54,32 @@
     color: #909499;
     
 }
+}
+
+@media (max-width: 768px) {
+    .services {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        
+    &__title {
+        font-size: 38px;
+        line-height: 38px;
+        padding-bottom: 16px;
+    }
+    &__list {
+        flex-direction: column;
+        gap: 20px;
+
+    }
+    &__item {
+        width: auto;
+    }
+    }
+}
+
 @media screen and (max-width: 1260px) {
     &__list {
         gap: 12px 0;
     }
 }
-}
-
-
 
