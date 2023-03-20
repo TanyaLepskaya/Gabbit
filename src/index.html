@@ -13,13 +13,28 @@
             <div class="header__logo">
                 <img class="header__logo-img" src="./assets/images/logo.png" alt="Логотип Габитов и партнёры">
             </div>
+            <button class="header__button js-popup-btn">Меню
+                <span class="header__button-open">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.0942 5.64697H2.90564" stroke="#103C58" stroke-width="1.8" stroke-linecap="round"/>
+                    <path d="M22.0942 12.5H8.3881" stroke="#103C58" stroke-width="1.8" stroke-linecap="round"/>
+                    <path d="M22.0942 19.353H13.8706" stroke="#103C58" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+            </span>
+            <span class="header__button-close">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.75 6.25L6.25 18.75" stroke="#103C58" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6.25 6.25L18.75 18.75" stroke="#103C58" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>      
+            </span>       
+            </button>
             <div class="header__block">
             <nav class="header__navigation">
                         <ul class="header__nav-list">
-                            <li class="header__nav-item"> <a class="header__nav-link" href="#services">Услуги</a></li>
-                            <li class="header__nav-item"> <a class="header__nav-link" href="#about-me">О нас </a></li>
-                            <li class="header__nav-item"> <a class="header__nav-link" href="#questions">Частые вопросы</a></li>
-                            <li class="header__nav-item"> <a class="header__nav-link" href="#contacts">Контакты</a></li>
+                            <li class="header__nav-item"> <a class="header__nav-link js-anchors" href="#services">Услуги</a></li>
+                            <li class="header__nav-item"> <a class="header__nav-link js-anchors" href="#about-me">О нас </a></li>
+                            <li class="header__nav-item"> <a class="header__nav-link js-anchors" href="#questions">Частые вопросы</a></li>
+                            <li class="header__nav-item"> <a class="header__nav-link js-anchors" href="#contacts">Контакты</a></li>
                         </ul>
             </nav>
             <div class="header__contacts">
@@ -44,6 +59,9 @@
                     </a>
                 </div>
             </div>
+            <div class="header__nav-button-row">
+                <a href="#contacts" class="header__nav-link header__nav-button button js-anchors">Написать на почту</a>
+            </div>
             </div>
         </div>
     </header> 
@@ -52,10 +70,12 @@
         <section class="content">
             <div class="content__block container">
                 <div class="content__info">
-                    <h1 class="content__title">Юридические услуги</h1>
-                    <p class="content__appeal">Доверьте своё дело профессионалам и Ваш спор решится
-                    без длительных судебных разбирательств</p>
-                    <a class="content__submit button" href="#" type="button">Получить консультацию</a>      
+                    <div>
+                        <h1 class="content__title">Юридические услуги</h1>
+                        <p class="content__appeal">Доверьте своё дело профессионалам и Ваш спор решится
+                        без длительных судебных разбирательств</p>
+                        <a class="content__submit button js-anchors" href="#contacts" type="button">Получить консультацию</a>      
+                    </div>
                     <div class=" content__signature">
                         <span class="content__ism">Юрист</span>
                         <span class="content__name">Артур Арнольдович Габитов</span>

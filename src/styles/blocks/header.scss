@@ -8,6 +8,9 @@
     align-items: center;
     
   }
+  .header__nav-button {
+    display: none;
+  }
   &__nav-list {
     display: flex;
     gap: 60px;
@@ -22,6 +25,7 @@
     justify-content: space-between;
     flex-grow: 1;
     align-items: center;
+    z-index: 10;
     
   }
   &__logo {
@@ -95,13 +99,129 @@
 
 @media (max-width:768px) {
   .header {
-    &__block {
+    &__button-close {
       display: none;
+    }
+    border: 1px solid #EBEAF0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FBFBFB;
+    z-index: 10;
+    
+    &__block {
+      display:none;
+      position: fixed;
+      background-color: #F0F1F5;
+      flex-direction: column;
+      height: 100%;
+      top: 62px;
+      right: 0;
+      align-items: flex-start;
+      justify-content: flex-start;
+      overflow-y: auto;
+  }
+  &__row {
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
     &__logo-img {
       max-width: 164px;
     }
+    &__logo {
+      width: 100%;
+    }
+    &__button {
+      font-size: 0;
+      border: none;
+      background-color: transparent;
+    }
+    &__nav-list {
+      flex-direction: column;
+      gap: 25px;
+      align-items: flex-start;
+      padding-top: 25px;
+      padding-left: 25px;
+      &:last-child {
+        padding-bottom: 30px;
+      }
+    }
+    &__contacts {
+      flex-direction: column;
+      background-color: #F0F1F5;
+      padding-top: 20px;
+      padding-left: 25px;
+    }
+    &__contacts-block {
+      border: none;
+      align-items: flex-start;
+      margin-bottom: 22px;
+    }
+    &__social {
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 32px;
+      padding-bottom: 40px;
+    }
+    &__nav-button {
+      display: block;
+      width: 100%;
+      text-align: center;
+      color: #fff;
+      &:hover {
+        color: #fff;
+      }
+    }
+    &__navigation {
+      width: 100%;
+      background-color: #fff;
+    }
+    &__nav-button-row {
+      padding-right: 10px;
+      padding-left: 10px;
+      width: 100%;
+      margin-bottom: 150px;
+    }
+    &__contacts-number {
+      line-height: 28px;
+      
+    }
+    .header__nav-button {
+      display: block;
+    }
+    &--open {
+      z-index: 10;
+      &::before {
+        content: '';
+        position: fixed;
+        z-index: -1;
+        width: 100%;
+        min-height: 100%;
+        top: 62px;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.45);
+      }
+      .header__button-close {
+        display: block;
+      }
+      .header__button-open {
+        display: none;
+      }
+      .header__block {
+        display: flex;
+      }
+    }
+
 }
+}
+
+@media (min-width:768px) {
+  .header {
+    &__button {
+      display: none;
+    }
+  }
 }
 
 

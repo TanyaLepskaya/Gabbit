@@ -18,9 +18,9 @@ body::-webkit-scrollbar {
 body {
     font-family: 'PT Serif', sans-serif;
     font-size: 18px;
-    line-height: 200%;
     font-weight: 400;
     background-color: #FBFBFB;
+    overflow-X: hidden;
 }
 
 h1,

@@ -14,3 +14,6 @@ import 'normalize.css';
 import './styles/index.scss';
 
 import './js/scripts';
+import './js/pop-up';
+import './js/links';
+// import './js/parallax';
