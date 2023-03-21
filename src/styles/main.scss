@@ -54,6 +54,12 @@ a {
     font-size: 17px;
     line-height: 26px;
     background-image: url(/public/images/point.png);
+    &:hover {
+        background-color: #18547A;
+    }
+    &:focus {
+        background-color: #18547A;
+    }
 }
 
 @media (max-width: 768px) {

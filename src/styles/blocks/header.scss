@@ -68,6 +68,7 @@
     padding-right: 22px;
     border-right: 1px solid #ebeaf0;
     margin-right: 20px;
+    justify-content: center;
   }
   &__social {
     display: flex;
@@ -78,6 +79,10 @@
     display: flex;
     width: 20px;
     height: 20px;
+    margin-bottom: 16px;
+  }
+  &__social-link:last-child {
+    margin-bottom: 0;
   }
   &__social-link--whatsapp:hover {
     svg {
