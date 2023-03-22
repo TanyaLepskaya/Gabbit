@@ -55,12 +55,12 @@
 
 @media (max-width: 768px) {
   .content {
-  background-image: url(/public/images/bg-mobil.png);
+  background-image: none;
   background-color: #f8f8f8;
   padding-top: 40px;
-  background-position: bottom right;
+  background-image: url(/public/images/min.png);
   background-size: contain;
-
+  background-repeat: no-repeat;
 
   &__img {
     display: none;
