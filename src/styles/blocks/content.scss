@@ -55,15 +55,22 @@
 
 @media (max-width: 768px) {
   .content {
-  background-image: none;
   background-color: #f8f8f8;
   padding-top: 40px;
-  background-image: url(/public/images/min.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-
+  position: relative;
+  overflow: hidden;
+  background-image: url(/public/images/band.png);
+  background-position: left;
+  background-size: cover;
+  background-position: -36%;
   &__img {
     display: none;
+  }
+  &__img-mobil {
+    position: absolute;
+    bottom: -220px;
+    right: -76px;
+    width: 250px;
   }
   &__block {
     justify-content: start;
@@ -96,5 +103,12 @@
   font-size: 16px;
   line-height: 24px;
 }
+}
+}
+@media (min-width: 768px) {
+  .content {
+  &__img-mobil {
+    display: none;
+  }
 }
 }
