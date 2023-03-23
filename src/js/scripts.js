@@ -1,22 +1,28 @@
-
 const items = document.querySelectorAll(`.js-list-item`);
+let openList = document.querySelector(`.questions__item--open`);
 
-const openList = (item) => {
+
+
+const open = (item) => {
     item.classList.add(`questions__item--open`)
 }
 
-const closeList = (item) => {
+const close = (item) => {
     item.classList.remove(`questions__item--open`)
 }
 
-items.forEach((item) => {
-    const btn = item.querySelector(`.js-btn-list`);
-    btn.addEventListener(`click`, (e) => {
-        const openWindow = document.querySelector(`.questions__item--open`);
-        if (openWindow) {
-            openWindow.classList.remove(`questions__item--open`);
-        }
-        openList(item)
-    })
-})
 
+items.forEach(item => {
+    item.addEventListener(`click`, (e) => {
+
+
+        if (!item.classList.contains(`questions__item--open`)) {
+            items.forEach(el => {
+                el.classList.remove(`questions__item--open`)
+            })
+            open(item);
+        } else {
+            close(item)
+        }
+    })
+} )

@@ -16,4 +16,6 @@ import './styles/index.scss';
 import './js/scripts';
 import './js/pop-up';
 import './js/links';
+import './js/form';
+import './js/observer';
 // import './js/parallax';

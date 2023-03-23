@@ -238,3 +238,17 @@
   }
 }
 }}
+
+.my-contacts__form--send {
+  animation: send 1.5s forwards;
+}
+
+@keyframes send {
+  20% {
+    transform: translateX(-40px);
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}

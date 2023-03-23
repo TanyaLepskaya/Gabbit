@@ -2,6 +2,7 @@ let header = document.querySelector(`.header`);
 let btn = document.querySelector(`.js-popup-btn`);
 let links = document.querySelectorAll(`.header__nav-link`);
 let body = document.querySelector(`.main__body`);
+let overlay = document.querySelector(`.header--overlay`)
 
 
 let modalShow = (modal) => {
@@ -23,6 +24,9 @@ if (window.innerWidth <= 768) {
         link.addEventListener(`click`, (e) => {
             modalShow(header)
         })
+    })
+    overlay.addEventListener(`click`, e => {
+        modalShow(header)
     })
 }
 
